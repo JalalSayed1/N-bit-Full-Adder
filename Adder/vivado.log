@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Sep 23 21:04:52 2023
+# Process ID: 17192
+# Current directory: C:/Users/aa409t/Desktop/Recap-VHDL/Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12140 C:\Users\aa409t\Desktop\Recap-VHDL\Adder\Adder.xpr
+# Log file: C:/Users/aa409t/Desktop/Recap-VHDL/Adder/vivado.log
+# Journal file: C:/Users/aa409t/Desktop/Recap-VHDL/Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aa409t/Desktop/Recap-VHDL/Adder/Adder.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/aa409t/Desktop/Xilinx/Adder' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/aa409t/Desktop/Recap-VHDL/Adder/Adder.gen/sources_1', nor could it be found using path 'C:/Users/aa409t/Desktop/Xilinx/Adder/Adder.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.

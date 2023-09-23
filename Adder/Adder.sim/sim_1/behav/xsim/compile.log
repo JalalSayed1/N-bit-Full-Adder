@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/Recap-VHDL/Adder/Adder.srcs/sources_1/new/Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/Recap-VHDL/Adder/Adder.srcs/sim_1/new/Adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Adder_tb'
