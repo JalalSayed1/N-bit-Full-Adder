@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-381,-122",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port Cin -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port A1 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port A2 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port B1 -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port B2 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port S1 -pg 1 -lvl 3 -x 450 -y 90 -defaultsOSRD
+preplace port S2 -pg 1 -lvl 3 -x 450 -y 170 -defaultsOSRD
+preplace port Cout -pg 1 -lvl 3 -x 450 -y 190 -defaultsOSRD
+preplace inst FullAdder_1bit_0 -pg 1 -lvl 1 -x 120 -y 100 -defaultsOSRD
+preplace inst FullAdder_1bit_1 -pg 1 -lvl 2 -x 330 -y 180 -defaultsOSRD
+preplace netloc FullAdder_1bit_0_Cout 1 1 1 220 110n
+preplace netloc Cin_1 1 0 1 NJ 120
+preplace netloc FullAdder_1bit_0_S 1 1 2 NJ 90 NJ
+preplace netloc FullAdder_1bit_1_S 1 2 1 NJ 170
+preplace netloc B2_1 1 0 2 NJ 180 NJ
+preplace netloc B1_1 1 0 1 NJ 100
+preplace netloc A2_1 1 0 2 NJ 20 230J
+preplace netloc A1_1 1 0 1 NJ 80
+preplace netloc FullAdder_1bit_1_Cout 1 2 1 NJ 190
+levelinfo -pg 1 0 120 330 450
+pagesize -pg 1 -db -bbox -sgen -70 0 530 260
+"
+}
+

@@ -1,0 +1,244 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3F31A5063F31A506",
+      "device": "xc7a200tfbg676-2",
+      "gen_directory": "../../../../project_1.gen/sources_1/bd/Adder2bit",
+      "name": "Adder2bit",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FullAdder_1bit_0": "",
+      "FullAdder_1bit_1": ""
+    },
+    "ports": {
+      "Cin": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "A1": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "A2": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B1": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B2": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "S1": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "S2": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "Cout": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "FullAdder_1bit_0": {
+        "vlnv": "xilinx.com:module_ref:FullAdder_1bit:1.0",
+        "xci_name": "Adder2bit_FullAdder_1bit_0_0",
+        "xci_path": "ip\\Adder2bit_FullAdder_1bit_0_0\\Adder2bit_FullAdder_1bit_0_0.xci",
+        "inst_hier_path": "FullAdder_1bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FullAdder_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "B": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Cin": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "S": {
+            "direction": "O"
+          },
+          "Cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "FullAdder_1bit_1": {
+        "vlnv": "xilinx.com:module_ref:FullAdder_1bit:1.0",
+        "xci_name": "Adder2bit_FullAdder_1bit_1_0",
+        "xci_path": "ip\\Adder2bit_FullAdder_1bit_1_0\\Adder2bit_FullAdder_1bit_1_0.xci",
+        "inst_hier_path": "FullAdder_1bit_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FullAdder_1bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "B": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Cin": {
+            "direction": "I"
+          },
+          "S": {
+            "direction": "O"
+          },
+          "Cout": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "FullAdder_1bit_0_Cout": {
+        "ports": [
+          "FullAdder_1bit_0/Cout",
+          "FullAdder_1bit_1/Cin"
+        ]
+      },
+      "Cin_1": {
+        "ports": [
+          "Cin",
+          "FullAdder_1bit_0/Cin"
+        ]
+      },
+      "FullAdder_1bit_0_S": {
+        "ports": [
+          "FullAdder_1bit_0/S",
+          "S1"
+        ]
+      },
+      "FullAdder_1bit_1_S": {
+        "ports": [
+          "FullAdder_1bit_1/S",
+          "S2"
+        ]
+      },
+      "B2_1": {
+        "ports": [
+          "B2",
+          "FullAdder_1bit_1/B"
+        ]
+      },
+      "B1_1": {
+        "ports": [
+          "B1",
+          "FullAdder_1bit_0/B"
+        ]
+      },
+      "A2_1": {
+        "ports": [
+          "A2",
+          "FullAdder_1bit_1/A"
+        ]
+      },
+      "A1_1": {
+        "ports": [
+          "A1",
+          "FullAdder_1bit_0/A"
+        ]
+      },
+      "FullAdder_1bit_1_Cout": {
+        "ports": [
+          "FullAdder_1bit_1/Cout",
+          "Cout"
+        ]
+      }
+    }
+  }
+}
