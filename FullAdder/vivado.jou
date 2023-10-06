@@ -2,13 +2,44 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Oct  6 11:32:37 2023
-# Process ID: 5708
+# Start of session at: Fri Oct  6 14:12:35 2023
+# Process ID: 15168
 # Current directory: C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16092 C:\Users\aa409t\Desktop\Recap-VHDL\FullAdder\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18468 C:\Users\aa409t\Desktop\Recap-VHDL\FullAdder\project_1.xpr
 # Log file: C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/vivado.log
 # Journal file: C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.xpr
 update_compile_order -fileset sources_1
+write_project_tcl -dump_project_info {C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.tcl}
+close [ open C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.srcs/sources_1/new/FullAdder_8bits.vhd w ]
+add_files C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.srcs/sources_1/new/FullAdder_8bits.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FullAdder_8bits [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_8bits
+file mkdir C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.srcs/sim_8bits/new
+set_property SOURCE_SET sources_1 [get_filesets sim_8bits]
+close [ open C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.srcs/sim_8bits/new/FullAdder_8bits_tb.vhd w ]
+add_files -fileset sim_8bits C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.srcs/sim_8bits/new/FullAdder_8bits_tb.vhd
+update_compile_order -fileset sim_8bits
+current_fileset -simset [ get_filesets sim_8bits ]
+update_compile_order -fileset sim_8bits
+launch_simulation -simset [get_filesets sim_8bits ]
+source FullAdder_8bits_tb.tcl
+run all
+run all
+restart
+run all
+run all
+close_sim
+launch_simulation -simset [get_filesets sim_8bits ]
+source FullAdder_8bits_tb.tcl
+run all
+close_sim
