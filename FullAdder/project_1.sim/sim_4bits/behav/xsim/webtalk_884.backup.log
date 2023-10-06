@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct  6 11:24:27 2023
+# Process ID: 884
+# Current directory: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim/xsim.dir/FullAdder_4bits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim/webtalk.log
+# Journal file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim/xsim.dir/FullAdder_4bits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 116.391 ; gain = 17.559
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  6 11:24:49 2023...

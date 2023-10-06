@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct  6 11:02:14 2023
+# Process ID: 9008
+# Current directory: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14132 C:\Users\aa409t\Desktop\GitHub\Recap-VHDL\FullAdder\project_1\project_1.xpr
+# Log file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/vivado.log
+# Journal file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_2bits.vhd C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_4bits.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_4bit
+file mkdir C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new
+set_property SOURCE_SET sources_1 [get_filesets sim_4bit]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_4bit C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new/FullAdder_4bits_tb.vhd
+update_compile_order -fileset sim_4bit
+current_fileset -simset [ get_filesets sim_4bit ]
+launch_simulation -simset [get_filesets sim_4bit ]
+source FullAdder_4bits.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_4bit ]
+source FullAdder_4bits.tcl
+current_fileset -simset [ get_filesets sim_1 ]
+delete_fileset [ get_filesets sim_4bit ]
+file delete -force C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_1/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_1/new/FullAdder_4bits_tb.vhd
+update_compile_order -fileset sim_1
+create_fileset -simset sim_4bits
+file mkdir C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new
+set_property SOURCE_SET sources_1 [get_filesets sim_4bits]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_4bits C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd
+current_fileset -simset [ get_filesets sim_4bits ]
+update_compile_order -fileset sim_4bits
+update_compile_order -fileset sim_4bits
+launch_simulation -simset [get_filesets sim_4bits ]
+source FullAdder_4bits_tb.tcl
+run all
+export_ip_user_files -no_script -force
+export_simulation  -directory "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/." -simulator xsim
+close_sim
+close_sim

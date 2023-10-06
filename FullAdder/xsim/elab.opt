@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_tb xil_defaultlib.FullAdder_4bits_tb -log elaborate.log

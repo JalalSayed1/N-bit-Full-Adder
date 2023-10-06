@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct  6 11:02:14 2023
+# Process ID: 9008
+# Current directory: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14132 C:\Users\aa409t\Desktop\GitHub\Recap-VHDL\FullAdder\project_1\project_1.xpr
+# Log file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/vivado.log
+# Journal file: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1' since last save.
+INFO: [filemgmt 56-1] Default IP Output Path : Directory not found as 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.gen/sources_1'; using path 'C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1/project_1.gen/sources_1' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_2bits.vhd C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_4bits.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_4bit
+file mkdir C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new
+set_property SOURCE_SET sources_1 [get_filesets sim_4bit]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_4bit C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit/new/FullAdder_4bits_tb.vhd
+update_compile_order -fileset sim_4bit
+current_fileset -simset [ get_filesets sim_4bit ]
+launch_simulation -simset [get_filesets sim_4bit ]
+Command: launch_simulation -simset sim_4bit
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4bit'
+INFO: [SIM-utils-54] Inspecting design source files for 'FullAdder_4bits' in fileset 'sim_4bit'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4bit'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+"xvhdl --incr --relax -prj FullAdder_4bits_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_1bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_1bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_2bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_2bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_4bits'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+"xelab -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_behav xil_defaultlib.FullAdder_4bits -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_behav xil_defaultlib.FullAdder_4bits -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder_1bit [fulladder_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder_2bits [fulladder_2bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.fulladder_4bits
+Built simulation snapshot FullAdder_4bits_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim/xsim.dir/FullAdder_4bits_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 116.430 ; gain = 17.680
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  6 11:06:18 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1008.523 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FullAdder_4bits_behav -key {Behavioral:sim_4bit:Functional:FullAdder_4bits} -tclbatch {FullAdder_4bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source FullAdder_4bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FullAdder_4bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 1008.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 1008.523 ; gain = 0.000
+launch_simulation -simset [get_filesets sim_4bit ]
+Command: launch_simulation -simset sim_4bit
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4bit'
+INFO: [SIM-utils-54] Inspecting design source files for 'FullAdder_4bits' in fileset 'sim_4bit'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4bit'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+"xvhdl --incr --relax -prj FullAdder_4bits_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+"xelab -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_behav xil_defaultlib.FullAdder_4bits -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_behav xil_defaultlib.FullAdder_4bits -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bit/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FullAdder_4bits_behav -key {Behavioral:sim_4bit:Functional:FullAdder_4bits} -tclbatch {FullAdder_4bits.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source FullAdder_4bits.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FullAdder_4bits_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_fileset -simset [ get_filesets sim_1 ]
+delete_fileset [ get_filesets sim_4bit ]
+file delete -force C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bit
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_1/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_1/new/FullAdder_4bits_tb.vhd
+update_compile_order -fileset sim_1
+create_fileset -simset sim_4bits
+file mkdir C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new
+set_property SOURCE_SET sources_1 [get_filesets sim_4bits]
+close [ open C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd w ]
+add_files -fileset sim_4bits C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd
+current_fileset -simset [ get_filesets sim_4bits ]
+update_compile_order -fileset sim_4bits
+update_compile_order -fileset sim_4bits
+launch_simulation -simset [get_filesets sim_4bits ]
+Command: launch_simulation -simset sim_4bits
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4bits'
+INFO: [SIM-utils-54] Inspecting design source files for 'FullAdder_4bits_tb' in fileset 'sim_4bits'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4bits'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim'
+"xvhdl --incr --relax -prj FullAdder_4bits_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_1bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_1bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_2bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_2bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sources_1/new/FullAdder_4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_4bits'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_4bits_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim'
+"xelab -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_tb_behav xil_defaultlib.FullAdder_4bits_tb -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 71f5ad140c5b41828112edcefcfdde62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FullAdder_4bits_tb_behav xil_defaultlib.FullAdder_4bits_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder_1bit [fulladder_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder_2bits [fulladder_2bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.FullAdder_4bits [fulladder_4bits_default]
+Compiling architecture bench of entity xil_defaultlib.fulladder_4bits_tb
+Built simulation snapshot FullAdder_4bits_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim/xsim.dir/FullAdder_4bits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 116.391 ; gain = 17.559
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct  6 11:24:49 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1008.523 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.sim/sim_4bits/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FullAdder_4bits_tb_behav -key {Behavioral:sim_4bits:Functional:FullAdder_4bits_tb} -tclbatch {FullAdder_4bits_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source FullAdder_4bits_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FullAdder_4bits_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 1008.523 ; gain = 0.000
+run all
+Note: Simulation Finished
+Time: 51210 ns  Iteration: 0  Process: /FullAdder_4bits_tb/stimulus  File: C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/project_1.srcs/sim_4bits/new/FullAdder_4bits_tb.vhd
+export_ip_user_files -no_script -force
+INFO: [export_ip_user_files-Tcl-2] No IPs found in the project.
+export_simulation  -directory "C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/." -simulator xsim
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/aa409t/Desktop/GitHub/Recap-VHDL/FullAdder/project_1/xsim/FullAdder_4bits_tb.sh'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1008.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1008.523 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  6 11:32:10 2023...
