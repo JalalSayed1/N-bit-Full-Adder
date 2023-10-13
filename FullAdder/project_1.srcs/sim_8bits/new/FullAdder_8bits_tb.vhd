@@ -29,22 +29,22 @@ entity FullAdder_8bits_tb is
 end;
 
 architecture bench of FullAdder_8bits_tb is
-
+constant num_of_bits : integer := 8;  -- adjust the value of n as needed
   component FullAdder_8bits
-      Port ( A : in STD_LOGIC_VECTOR (7 downto 0);
-             B : in STD_LOGIC_VECTOR (7 downto 0);
+      Port ( A : in STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
+             B : in STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
              Cin : in STD_LOGIC;
-             Sum : out STD_LOGIC_VECTOR (7 downto 0);
+             Sum : out STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
              Cout : out STD_LOGIC);
   end component;
 -- figure out why this exists
-  signal A: STD_LOGIC_VECTOR (7 downto 0);
-  signal B: STD_LOGIC_VECTOR (7 downto 0);
+  signal A: STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
+  signal B: STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
   signal Cin: STD_LOGIC;
-  signal Sum: STD_LOGIC_VECTOR (7 downto 0);
+  signal Sum: STD_LOGIC_VECTOR (num_of_bits-1 downto 0);
   signal Cout: STD_LOGIC;
 
-constant num_of_bits : integer := 8;  -- adjust the value of n as needed
+
 
 begin
   uut: FullAdder_8bits port map ( A    => A,
@@ -56,7 +56,10 @@ begin
 stimulus: process
 
   variable num_of_combination : integer := (2**num_of_bits)-1;
-
+  
+  -- 9 bit number for sum (8 bits) and curry out (1 one):
+  variable expected_sum : std_logic_vector(num_of_bits downto 0);
+ 
   begin
 
     for A_value in 0 to num_of_combination loop -- 16 combination for 4 bit input
@@ -75,13 +78,25 @@ stimulus: process
    
                 -- wait for results:
                 wait for 10 ns;
-            
+                
+                -- we sum A_value, B_value and C_value then we compare with 'Sum':
+                expected_sum := std_logic_vector(to_unsigned(A_value + B_value + C_value, num_of_bits+1));
+                
+                -- check result:
+                assert expected_sum(num_of_bits-1 downto 0) = Sum and expected_sum(num_of_bits) = Cout
+                    report "Mismatch: expected: " & integer'image(to_integer(unsigned(expected_sum(num_of_bits-1 downto 0))))  & ", instead: " & integer'image(to_integer(unsigned(Sum)))
+                    severity error;
+       
+                    
             end loop;
          end loop;
+         
      end loop;
-            
-   report "Simulation Finished";
-   wait;
+     
+     report "Simulation finished !!"
+     severity note;
+     wait;
+     
   end process;
 
 

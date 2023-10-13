@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Oct  6 15:46:45 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Oct 13 16:07:11 2023" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "d53390d0-d268-4288-ac5e-ddf165bf49c5" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "71f5ad140c5b41828112edcefcfdde62" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "4" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "30" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz" -context "user_environment"
@@ -27,7 +27,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1310720 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.17_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "14560_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2290297889 -regid "" -xml C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.16_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "14572_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 4270401092 -regid "" -xml C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/aa409t/Desktop/Recap-VHDL/FullAdder/project_1.sim/sim_8bits/behav/xsim/xsim.dir/FullAdder_8bits_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

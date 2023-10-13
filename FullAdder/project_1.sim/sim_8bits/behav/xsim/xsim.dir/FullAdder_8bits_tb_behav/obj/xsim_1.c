@@ -54,20 +54,20 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
+IKI_DLLESPEC extern void execute_66(char*, char *);
 IKI_DLLESPEC extern void execute_63(char*, char *);
-IKI_DLLESPEC extern void execute_60(char*, char *);
-IKI_DLLESPEC extern void execute_61(char*, char *);
-IKI_DLLESPEC extern void execute_62(char*, char *);
-IKI_DLLESPEC extern void execute_33(char*, char *);
-IKI_DLLESPEC extern void execute_34(char*, char *);
-IKI_DLLESPEC extern void execute_35(char*, char *);
-IKI_DLLESPEC extern void execute_20(char*, char *);
-IKI_DLLESPEC extern void execute_21(char*, char *);
-IKI_DLLESPEC extern void execute_22(char*, char *);
-IKI_DLLESPEC extern void execute_15(char*, char *);
-IKI_DLLESPEC extern void execute_16(char*, char *);
+IKI_DLLESPEC extern void execute_64(char*, char *);
+IKI_DLLESPEC extern void execute_65(char*, char *);
+IKI_DLLESPEC extern void execute_36(char*, char *);
+IKI_DLLESPEC extern void execute_37(char*, char *);
+IKI_DLLESPEC extern void execute_38(char*, char *);
+IKI_DLLESPEC extern void execute_23(char*, char *);
+IKI_DLLESPEC extern void execute_24(char*, char *);
+IKI_DLLESPEC extern void execute_25(char*, char *);
+IKI_DLLESPEC extern void execute_18(char*, char *);
+IKI_DLLESPEC extern void execute_19(char*, char *);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[13] = {(funcp)execute_63, (funcp)execute_60, (funcp)execute_61, (funcp)execute_62, (funcp)execute_33, (funcp)execute_34, (funcp)execute_35, (funcp)execute_20, (funcp)execute_21, (funcp)execute_22, (funcp)execute_15, (funcp)execute_16, (funcp)vhdl_transfunc_eventcallback};
+funcp funcTab[13] = {(funcp)execute_66, (funcp)execute_63, (funcp)execute_64, (funcp)execute_65, (funcp)execute_36, (funcp)execute_37, (funcp)execute_38, (funcp)execute_23, (funcp)execute_24, (funcp)execute_25, (funcp)execute_18, (funcp)execute_19, (funcp)vhdl_transfunc_eventcallback};
 const int NumRelocateId= 13;
 
 void relocate(char *dp)
