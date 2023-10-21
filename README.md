@@ -196,7 +196,7 @@ When expected_sum is incorrect, in tcl console, it will show:
 
 For this, we wanted to use generic and generate to make the code more scalable. Therefore, we are using 4x 4-bits adders to make a 16 bits adder.
 
-<!-- ### Notes
+### Notes
 
 ```vhdl
 
@@ -238,4 +238,4 @@ To make a very scalable full adder and to make the code as dynamic as possible, 
 
 ## Conclusion
 
-1. . -->
+1. .
