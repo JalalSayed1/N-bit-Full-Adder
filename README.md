@@ -10,7 +10,7 @@ This is a N-bit full adder made in VHDL.
 
 Firstly, make a 1-bit full adder to be used to scale up to N-bit full adder.
 
-![1-bit](img\1-bit-full-adder.png)
+![1-bit](img/1-bit-full-adder.png)
 
 Reference: [Full Adder Circuit and its Construction](https://circuitdigest.com/tutorial/full-adder-circuit-theory-truth-table-construction)
 
