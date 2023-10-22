@@ -192,7 +192,7 @@ When expected_sum is incorrect, in tcl console, it will show:
 
 ![8-bit](img/8-bit%20resutls.png)
 
-## 16 bits full adder
+<!-- ## 16 bits full adder
 
 For this, we wanted to use generic and generate to make the code more scalable. Therefore, we are using 4x 4-bits adders to make a 16 bits adder.
 
