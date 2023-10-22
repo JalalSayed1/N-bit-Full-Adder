@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a N-bit full adder made in VHDL.
+This is an N-bit full adder implemented in VHDL. It leverages advanced programming techniques to ensure code modularity, scalability, and reusability. These techniques include the use of VHDL `generics` for parameterization, the `generate` construct for creating modular and customizable code, and the incorporation of other VHDL modules as necessary for a complete implementation.
 
 ---
 
