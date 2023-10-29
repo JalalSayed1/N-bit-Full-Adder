@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 29 12:33:51 2023
+# Process ID: 11624
+# Current directory: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20336 C:\Users\aa409t\Desktop\FPGA intern\N-bit-Full-Adder\FullAdder\project_1.xpr
+# Log file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/vivado.log
+# Journal file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.xpr}
+launch_simulation -simset [get_filesets sim_16bits ]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FullAdder_nbits_tb [get_filesets sim_16bits]
+set_property top_lib xil_defaultlib [get_filesets sim_16bits]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation -simset [get_filesets sim_16bits ]
+source FullAdder_nbits_tb.tcl
+close_sim

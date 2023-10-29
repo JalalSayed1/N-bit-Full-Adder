@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
 
-entity FullAdder_16bits_tb is
+entity FullAdder_nbits_tb is
 end;
 
-architecture bench of FullAdder_16bits_tb is
+architecture bench of FullAdder_nbits_tb is
 
   constant num_of_bit : integer := 16;
 
-  component FullAdder_16bits
+  component FullAdder_nbits
       generic (
           num_of_bit: integer := num_of_bit
       );
@@ -31,7 +31,7 @@ architecture bench of FullAdder_16bits_tb is
 begin
 
   -- Insert values for generic parameters !!
-  uut: FullAdder_16bits generic map ( num_of_bit =>  num_of_bit)
+  uut: FullAdder_nbits generic map ( num_of_bit =>  num_of_bit)
                            port map ( A          => A,
                                       B          => B,
                                       Cin        => Cin,

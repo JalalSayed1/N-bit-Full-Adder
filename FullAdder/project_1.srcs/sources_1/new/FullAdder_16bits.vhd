@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.Std_logic_1164.all;
 use IEEE.Numeric_Std.all;
 
-entity FullAdder_16bits is
+entity FullAdder_nbits is
     generic (
         num_of_bit: integer := 16 
     );
@@ -34,10 +34,10 @@ entity FullAdder_16bits is
         Sum  : out STD_LOGIC_VECTOR (num_of_bit-1 downto 0);
         Cout : out STD_LOGIC
     );
-end FullAdder_16bits;
+end FullAdder_nbits;
 
 -- 16-bit adder made using from 1-bit adder utilising the generate method in VHDL. 
-architecture Behavioral of FullAdder_16bits is
+architecture Behavioral of FullAdder_nbits is
 
     signal internalSum   : STD_LOGIC_VECTOR (num_of_bit-1 downto 0) := (others => '0');
    
