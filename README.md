@@ -179,7 +179,7 @@ begin
             report "Mismatch: expected: " & integer'image(to_integer(unsigned(expected_sum(num_of_bits-1 downto 0))))  & ", instead: " & integer'image(to_integer(unsigned(Sum))) 
            severity error; 
       ...
-end process;
+end process
 end;
 ```
 
