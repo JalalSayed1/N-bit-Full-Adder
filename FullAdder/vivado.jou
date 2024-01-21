@@ -2,12 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Oct 29 12:37:48 2023
-# Process ID: 5932
-# Current directory: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19600 C:\Users\aa409t\Desktop\FPGA intern\N-bit-Full-Adder\FullAdder\project_1.xpr
-# Log file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/vivado.log
-# Journal file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder\vivado.jou
+# Start of session at: Sun Jan 21 11:39:43 2024
+# Process ID: 6728
+# Current directory: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13252 C:\Users\Jalal\Desktop\N-bit-Full-Adder\FullAdder\project_1.xpr
+# Log file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/vivado.log
+# Journal file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.xpr}
+open_project C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.xpr
+launch_simulation -simset [get_filesets sim_16bits ]
+source FullAdder_nbits_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

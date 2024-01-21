@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan 21 11:32:12 2024
+# Process ID: 8684
+# Current directory: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9708 C:\Users\Jalal\Desktop\N-bit-Full-Adder\FullAdder\project_1.xpr
+# Log file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/vivado.log
+# Journal file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.xpr
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation -simset [get_filesets sim_16bits ]
+source FullAdder_nbits_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+export_ip_user_files -of_objects  [get_files C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.srcs/sources_1/new/FullAdder_16bits.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.srcs/sources_1/new/FullAdder_16bits.vhd
+file delete -force C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.srcs/sources_1/new/FullAdder_16bits.vhd
+close [ open C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.srcs/sources_1/new/FullAdder_nbit.vhd w ]
+add_files C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.srcs/sources_1/new/FullAdder_nbit.vhd
+launch_simulation -simset [get_filesets sim_16bits ]
+source FullAdder_nbits_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property top FullAdder_nbits [current_fileset]

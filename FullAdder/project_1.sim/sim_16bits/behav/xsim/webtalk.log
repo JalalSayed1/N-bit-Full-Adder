@@ -2,13 +2,12 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Oct 29 12:36:57 2023
-# Process ID: 14276
-# Current directory: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim/xsim.dir/FullAdder_nbits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim/webtalk.log
-# Journal file: C:/Users/aa409t/Desktop/FPGA intern/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim\webtalk.jou
+# Start of session at: Sun Jan 21 11:34:15 2024
+# Process ID: 9440
+# Current directory: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim/xsim.dir/FullAdder_nbits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim/webtalk.log
+# Journal file: C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/aa409t/Desktop/FPGA -notrace
-couldn't read file "C:/Users/aa409t/Desktop/FPGA": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Sun Oct 29 12:36:57 2023...
+source C:/Users/Jalal/Desktop/N-bit-Full-Adder/FullAdder/project_1.sim/sim_16bits/behav/xsim/xsim.dir/FullAdder_nbits_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jan 21 11:34:16 2024...
