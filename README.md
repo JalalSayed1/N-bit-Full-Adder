@@ -4,6 +4,10 @@
 
 This is an N-bit full adder implemented in VHDL. It leverages advanced programming techniques to ensure code modularity, scalability, and reusability. These techniques include the use of VHDL `generics` for parameterization, the `generate` construct for creating modular and customizable code, and the incorporation of other VHDL modules as necessary for a complete implementation.
 
+The end results of a 16 bit full adder is shown below:
+
+![16-bits](img/netlist.png)
+
 ---
 
 ## 1-bit full adder
